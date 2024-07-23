@@ -43,3 +43,6 @@ Desarrollo:
 Configuración del entorno de desarrollo y repositorio de código.
 Desarrollo del front-end utilizando tecnologías como HTML, CSS, JavaScript y frameworks como Bootstrap.
 Desarrollo del back-end utilizando tecnologías como Node.js, Express, y bases de datos como MongoDB o SQL.
+
+Tecnologías aplicadas al proyecto: 
+-Bootstrap v5.2.3
