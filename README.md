@@ -1,4 +1,7 @@
 # EcomerseCilsaBootcamp
+<div align="center">
+    <img src="public/assets/images/log/logo-cilsa.png" alt="Logo Cilsa" width="400">
+</div>
 Este Ecomerse fue parte de una actividad grupal del bootcamp full stack cursado durante 2024.
 
 Descripción del Trabajo Grupal en el Bootcamp de Cilsa
