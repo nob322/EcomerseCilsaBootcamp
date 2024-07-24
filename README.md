@@ -49,6 +49,9 @@ Desarrollo del back-end utilizando tecnologías como Node.js, Express, y bases d
 
 Tecnologías aplicadas al proyecto: 
 -Bootstrap v5.2.3
+-Html 5
+-Js
+-Css 3
 
 Contacto fundación Cilsa 
 -www.https://cilsa.org/
