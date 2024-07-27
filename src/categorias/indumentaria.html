@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../public/assets/css/estilos.css">
-    <link rel="stylesheet" href="../public/assets/css/categorias.css">
+    <link rel="stylesheet" href="../../public/assets/css/estilos.css">
+    <link rel="stylesheet" href="../../public/assets/css/categorias.css">
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <title>categorias</title>
+    <title>Indumentaria</title>
 </head>
 <body>
 <!-- navbar  -->
@@ -38,16 +38,16 @@
                 <!-- breadcrum -->
                 <div class="breadcrums mb-0 mb-md-2">
                     <div>
-                        <a class="crumb" href="dummy_index.html">Inicio</a>
+                        <a class="crumb" href="../dummy_index.html">Inicio</a>
                         <span class="separator">.</span>
-                        <span class="crumb active">Calzado</span>
+                        <span class="crumb active">Indumentaria</span>
                     </div>
                 </div>
                 <!-- page title  -->
 
                 <div class="row" id="category-menu">
                     <div class="col-8" id="category-name">
-                        <h1 class="h4">Calzado</h1>
+                        <h1 class="h4">Indumentaria</h1>
                     </div>
 
                     <!-- modal  -->
@@ -82,7 +82,10 @@
         </div>
 
     </section> 
-    <p class="mt-2 mb-3 container-fluid">Encontrá zapatillas y toda la indumentaria en Vonk Fake ♥</p>
+    
+    <div id="category-description">
+        <p class="mt-2 mb-3 container-fluid">Encontrá Indumentaria en Vonk Fake ♥</p>
+    </div>
 
     <!-- category body -->
     <section class="category-body mt-2">
@@ -90,6 +93,27 @@
             <div class="row" id="category-row">
                 <!-- filters  -->
                 <div id="filter-sidebar" class="col col-md-2 col-sm-2" >
+                    <!-- dress category -->
+                    <div d-md-block>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="" class="btn-link">Camperas</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class="btn-link">Remeras</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class="btn-link">Pantalones</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class="btn-link">Buzos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                     <!-- separator -->
+                    <div class="divider mt-3 pt-2"></div>
+                    
                     <h5 class=" mb-2">Filtrar por</h5>
                     <div>
                         <div class="mb-3 mt-4 subtitle">
@@ -97,11 +121,11 @@
                         </div>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox" autocomplete="off">
-                                <span class="ps-4 checkbox-text with-color">Blanco</span>
+                                <span class="ps-4 checkbox-text with-color">Verde</span>
                         </label>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                                <span class="ps-4 checkbox-text with-color">Gris</span>
+                                <span class="ps-4 checkbox-text with-color">Rojo</span>
                         </label>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox" autocomplete="off">
@@ -122,15 +146,15 @@
                         </div>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox" autocomplete="off">
-                                <span class="ps-4 checkbox-text with-color">4</span>
+                                <span class="ps-4 checkbox-text with-color">28</span>
                         </label>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                                <span class="ps-4 checkbox-text with-color">8.5</span>
+                                <span class="ps-4 checkbox-text with-color">30</span>
                         </label>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                                <span class="ps-4 checkbox-text with-color">9</span>
+                                <span class="ps-4 checkbox-text with-color">32</span>
                         </label>
                     </div>
 
@@ -173,10 +197,10 @@
                             <!-- product card  -->
                              <!-- zap talle 4 -->
                             <div class="card border-0" >
-                                <img src="../public/assets/images/products/footwear/man/sneakers/zap_negra_vans_costado.webp" class="card-img-top" alt="...">
+                                <img src="../../public/assets/images/products/dress/man/sueter-gris-frontal.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <p class="card-text">Zapatilla Vans</p>
-                                  <p><strong>$30000</strong> </p>
+                                  <p class="card-text">Sueter Althon N</p>
+                                  <p><strong>$39000</strong> </p>
                                 </div>
                               </div>
                         </div>
@@ -184,10 +208,10 @@
                             <!-- product card  -->
                              <!-- zap talle 8.5  -->
                             <div class="card border-0" >
-                                <img src="../public/assets/images/products/footwear/man/sneakers/zap_nike_blanca_costado.webp" class="card-img-top" alt="...">
+                                <img src="../../public/assets/images/products/dress/man/campera-marron-frontal.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <p class="card-text">Zapatilla Nike</p>
-                                  <p><strong>$25000</strong> </p>
+                                  <p class="card-text">Camisa Althon N</p>
+                                  <p><strong>$52000</strong> </p>
                                 </div>
                               </div>
                         </div>
@@ -195,10 +219,10 @@
                             <!-- product card  -->
                              <!-- zap talle 9 -->
                             <div class="card border-0" >
-                                <img src="../public/assets/images/products/footwear/man/sneakers/zap_roja_dc_costado.webp" class="card-img-top" alt="...">
+                                <img src="../../public/assets/images/products/dress/man/remera-negra-frontal.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <p class="card-text">Zapatilla DC Shoes</p>
-                                  <p><strong>$32000</strong> </p>
+                                  <p class="card-text">Remera Althon N</p>
+                                  <p><strong>$24000</strong> </p>
                                 </div>
                               </div>
                         </div>

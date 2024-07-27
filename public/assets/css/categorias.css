@@ -118,6 +118,13 @@ h5, .h5 {
     letter-spacing: 2px;
 }
 
+.btn-link {
+    color: var(--main-foreground);
+    fill: var(--main-foreground);
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .category-body .btn {
     background: 0 0;
     text-transform: uppercase;
@@ -167,6 +174,11 @@ h5, .h5 {
     transition: all .4s ease;
 }
 
+.list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 
 /* breakpoints categorias  */
 @media (min-width: 768px) {
@@ -208,5 +220,10 @@ h5, .h5 {
 
     .row {
         padding: 3vw;
+    }
+
+    #category-description .container-fluid {
+        text-align: center;
+        font-size: 14px;
     }
 }
