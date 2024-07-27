@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/assets/css/estilos.css">
+    <link rel="stylesheet" href="../public/assets/css/categorias.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Staatliches&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>categorias</title>
+</head>
+<body>
+<!-- navbar  -->
+    <ul class="nav justify-content-center mb-3">
+        <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Categorias</a>
+        </li>
+    </ul>
+  <!-- end navbar  -->
+
+  <div class="container-fluid">
+
+    <section class="">
+        <div class="col-auto">
+            <div class="row align-items-center">
+                <!-- breadcrum -->
+                <div class="breadcrums mb-0 mb-md-2">
+                    <div>
+                        <a class="crumb" href="dummy_index.html">Inicio</a>
+                        <span class="separator">.</span>
+                        <span class="crumb active">Calzado</span>
+                    </div>
+                </div>
+                <!-- page title  -->
+
+                <div class="row" id="category-menu">
+                    <div class="col-8" id="category-name">
+                        <h1 class="h4">Calzado</h1>
+                    </div>
+                   <!-- <div class="col-4 d-none" id="category-modal-menu">
+                        <a href="#" class="btn btn-secondary btn-small" id="filters-dropdown">
+                            <span >Filtrar</span>
+                        </a>
+                   </div> -->
+
+                    <!-- dummy modal  -->
+                    <div class="col-4" id="category-modal-menu">
+
+                        <button type="button" class="btn-small btn btn-danger openBtn"   
+                        data-bs-toggle="modal" data-bs-target="#myModal"   onclick="addCode()" >
+                            Open modal
+                        </button>
+                        
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                        
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Filtros</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                
+                                <div class="modal-body">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            
+                    <!-- end dummy modal  -->
+                </div>
+            </div>
+        </div>
+
+    </section> 
+    <p class="mt-2 mb-3 container-fluid">Encontrá zapatillas y toda la indumentaria en Vonk Fake ♥</p>
+
+    <!-- category body -->
+    <section class="category-body mt-2">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- filters  -->
+                <div id="filter-sidebar" class="col col-md-2 col-sm-2" >
+                    <h5 class=" mb-2">Filtrar por</h5>
+                    <div>
+                        <div class="mb-3 mt-4 subtitle">
+                            Color
+                        </div>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">Blanco</span>
+                            <!-- </span> -->
+                        </label>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">Gris</span>
+                            <!-- </span> -->
+                        </label>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">Negro</span>
+                            <!-- </span> -->
+                        </label>
+                    </div>
+
+                    <a href="#" class="d-inline-block btn btn-secondary btn-small">
+                        <span>Ver todos</span>
+                    </a>
+
+                    <!-- separator -->
+                    <div class="divider mt-3 pt-2"></div>
+                    
+                    <div>
+                        <div class="mb-3 mt-4 subtitle">
+                            Talle
+                        </div>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">4</span>
+                            <!-- </span> -->
+                        </label>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">8.5</span>
+                            <!-- </span> -->
+                        </label>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">9</span>
+                            <!-- </span> -->
+                        </label>
+                    </div>
+
+                    <a href="#" class="d-inline-block btn btn-secondary btn-small">
+                        <span>Ver todos</span>
+                    </a>
+
+                    <!-- separator -->
+                    <div class="divider mt-3 pt-2"></div>
+
+                    <div class="price-filter-container">
+                        <form action="">
+                            <div class="mb-3 mt-4 subtitle">Precio</div>
+                            <div class="form-group">
+                                <span class="filter-input-price-container">
+                                    <label for="" class="form-label">Desde</label>
+                                    <input type="number" name="min_price" step="1" min="0" pattern="\d*" 
+                                    class="form-control filter-input-price"
+                                    value placeholder="54.999">
+                                </span>      
+                                <span class="filter-input-price-container">
+                                    <label for="" class="form-label">Hasta</label>
+                                    <input type="number" name="min_price" step="1" min="0" pattern="\d*" 
+                                    class="form-control filter-input-price" 
+                                    value placeholder="245.799">
+                                </span>      
+                                <button type="submit" class="btn btn-secondary btn-small chevron btn-square"></button>
+                             
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="col pl-0">
+                    <!-- products  -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <!-- product card  -->
+                             <!-- zap talle 4 -->
+                            <!-- <div class="card border-0" style="width: 18rem;"> -->
+                            <div class="card border-0" >
+                                <img src="../public/assets/images/products/footwear/man/sneakers/zap_negra_vans_costado.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Zapatilla Vans</p>
+                                  <p><strong>$30000</strong> </p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <!-- product card  -->
+                             <!-- zap talle 8.5  -->
+                            <!-- <div class="card border-0" style="width: 18rem;"> -->
+                            <div class="card border-0" >
+                                <img src="../public/assets/images/products/footwear/man/sneakers/zap_nike_blanca_costado.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Zapatilla Nike</p>
+                                  <p><strong>$25000</strong> </p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <!-- product card  -->
+                             <!-- zap talle 9 -->
+                            <!-- <div class="card border-0" style="width: 18rem;"> -->
+                            <div class="card border-0" >
+                                <img src="../public/assets/images/products/footwear/man/sneakers/zap_roja_dc_costado.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Zapatilla DC Shoes</p>
+                                  <p><strong>$32000</strong> </p>
+                                </div>
+                              </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal  -->
+
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2">
+        Open modal
+    </button>
+      
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Filtros</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div   class="col" >
+                    <h5 class=" mb-2">Filtrar por</h5>
+                    <div>
+                        <div class="mb-3 mt-4 subtitle">
+                            Color
+                        </div>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">Blanco</span>
+                            <!-- </span> -->
+                        </label>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">Gris</span>
+                            <!-- </span> -->
+                        </label>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">Negro</span>
+                            <!-- </span> -->
+                        </label>
+                    </div>
+
+                    <a href="#" class="d-inline-block btn btn-secondary btn-small">
+                        <span>Ver todos</span>
+                    </a>
+
+                    <!-- separator -->
+                    <div class="divider mt-3 pt-2"></div>
+                    
+                    <div>
+                        <div class="mb-3 mt-4 subtitle">
+                            Talle
+                        </div>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">4</span>
+                            <!-- </span> -->
+                        </label>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">8.5</span>
+                            <!-- </span> -->
+                        </label>
+                        <label for="" class="checkbox-container">
+                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
+                            <!-- <span class="checkbox"> -->
+                                <span class="ps-4 checkbox-text with-color">9</span>
+                            <!-- </span> -->
+                        </label>
+                    </div>
+
+                    <a href="#" class="d-inline-block btn btn-secondary btn-small">
+                        <span>Ver todos</span>
+                    </a>
+
+                    <!-- separator -->
+                    <div class="divider mt-3 pt-2"></div>
+
+                    <div class="price-filter-container">
+                        <form action="">
+                            <div class="mb-3 mt-4 subtitle">Precio</div>
+                            <div class="form-group">
+                                <span class="filter-input-price-container">
+                                    <label for="" class="form-label">Desde</label>
+                                    <input type="number" name="min_price" step="1" min="0" pattern="\d*" 
+                                    class="form-control filter-input-price"
+                                    value placeholder="54.999">
+                                </span>      
+                                <span class="filter-input-price-container">
+                                    <label for="" class="form-label">Hasta</label>
+                                    <input type="number" name="min_price" step="1" min="0" pattern="\d*" 
+                                    class="form-control filter-input-price" 
+                                    value placeholder="245.799">
+                                </span>      
+                                <button type="submit" class="btn btn-secondary btn-small chevron btn-square"></button>
+                             
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+            <!-- end modal  -->
+  </div>
+
+  
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+    var filters_sidebar = document.getElementById('filter-sidebar')
+    // $('.openBtn').on('click',function(){
+    //     filters_sidebar.setAttribute('class', 'myclass');
+    //     $('.modal-body').html(filters_sidebar);
+   
+    // });
+    function addCode() {
+        filters_sidebar.setAttribute('class', 'myclass');
+        var modal_b = document.getElementsByClassName('modal-body');
+        modal_b[0].appendChild(filters_sidebar);
+    }
+    </script>
+
+</html>
