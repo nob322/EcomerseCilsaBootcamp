@@ -49,18 +49,13 @@
                     <div class="col-8" id="category-name">
                         <h1 class="h4">Calzado</h1>
                     </div>
-                   <!-- <div class="col-4 d-none" id="category-modal-menu">
-                        <a href="#" class="btn btn-secondary btn-small" id="filters-dropdown">
-                            <span >Filtrar</span>
-                        </a>
-                   </div> -->
 
-                    <!-- dummy modal  -->
-                    <div class="col-4" id="category-modal-menu">
+                    <!-- modal  -->
+                    <div class="col-4 d-none" id="category-modal-menu">
 
-                        <button type="button" class="btn-small btn btn-danger openBtn"   
-                        data-bs-toggle="modal" data-bs-target="#myModal"   onclick="addCode()" >
-                            Open modal
+                        <button type="button" class="btn-small btn btn-secondary openBtn"   
+                        data-bs-toggle="modal" data-bs-target="#myModal"  id="filters-dropdown" >
+                            Filtrar
                         </button>
                         
                         <div class="modal fade" id="myModal">
@@ -69,7 +64,7 @@
                         
                                     <!-- Modal Header -->
                                     <div class="modal-header">
-                                    <h4 class="modal-title">Filtros</h4>
+                                    <h4 class="modal-title ms-3">Filtros</h4>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
                 
@@ -81,7 +76,7 @@
                     </div>
 
             
-                    <!-- end dummy modal  -->
+                    <!-- end modal  -->
                 </div>
             </div>
         </div>
@@ -91,8 +86,8 @@
 
     <!-- category body -->
     <section class="category-body mt-2">
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container-fluid" id="category-container">
+            <div class="row" id="category-row">
                 <!-- filters  -->
                 <div id="filter-sidebar" class="col col-md-2 col-sm-2" >
                     <h5 class=" mb-2">Filtrar por</h5>
@@ -102,21 +97,15 @@
                         </div>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox" autocomplete="off">
-                            <!-- <span class="checkbox"> -->
                                 <span class="ps-4 checkbox-text with-color">Blanco</span>
-                            <!-- </span> -->
                         </label>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                            <!-- <span class="checkbox"> -->
                                 <span class="ps-4 checkbox-text with-color">Gris</span>
-                            <!-- </span> -->
                         </label>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox" autocomplete="off">
-                            <!-- <span class="checkbox"> -->
                                 <span class="ps-4 checkbox-text with-color">Negro</span>
-                            <!-- </span> -->
                         </label>
                     </div>
 
@@ -133,21 +122,15 @@
                         </div>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox" autocomplete="off">
-                            <!-- <span class="checkbox"> -->
                                 <span class="ps-4 checkbox-text with-color">4</span>
-                            <!-- </span> -->
                         </label>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                            <!-- <span class="checkbox"> -->
                                 <span class="ps-4 checkbox-text with-color">8.5</span>
-                            <!-- </span> -->
                         </label>
                         <label for="" class="checkbox-container">
                             <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                            <!-- <span class="checkbox"> -->
                                 <span class="ps-4 checkbox-text with-color">9</span>
-                            <!-- </span> -->
                         </label>
                     </div>
 
@@ -183,13 +166,12 @@
                 </div>
 
 
-                <div class="col pl-0">
+                <div class="col pl-0 ps-3" id="products-sidebar">
                     <!-- products  -->
                     <div class="row">
                         <div class="col-md-3 col-sm-4">
                             <!-- product card  -->
                              <!-- zap talle 4 -->
-                            <!-- <div class="card border-0" style="width: 18rem;"> -->
                             <div class="card border-0" >
                                 <img src="../public/assets/images/products/footwear/man/sneakers/zap_negra_vans_costado.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -201,7 +183,6 @@
                         <div class="col-md-3 col-sm-4">
                             <!-- product card  -->
                              <!-- zap talle 8.5  -->
-                            <!-- <div class="card border-0" style="width: 18rem;"> -->
                             <div class="card border-0" >
                                 <img src="../public/assets/images/products/footwear/man/sneakers/zap_nike_blanca_costado.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -213,7 +194,6 @@
                         <div class="col-md-3 col-sm-4">
                             <!-- product card  -->
                              <!-- zap talle 9 -->
-                            <!-- <div class="card border-0" style="width: 18rem;"> -->
                             <div class="card border-0" >
                                 <img src="../public/assets/images/products/footwear/man/sneakers/zap_roja_dc_costado.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -229,116 +209,7 @@
         </div>
     </section>
 
-    <!-- modal  -->
-
-    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2">
-        Open modal
-    </button>
-      
-    <div class="modal" id="myModal2">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Filtros</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body">
-                <div   class="col" >
-                    <h5 class=" mb-2">Filtrar por</h5>
-                    <div>
-                        <div class="mb-3 mt-4 subtitle">
-                            Color
-                        </div>
-                        <label for="" class="checkbox-container">
-                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
-                            <!-- <span class="checkbox"> -->
-                                <span class="ps-4 checkbox-text with-color">Blanco</span>
-                            <!-- </span> -->
-                        </label>
-                        <label for="" class="checkbox-container">
-                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                            <!-- <span class="checkbox"> -->
-                                <span class="ps-4 checkbox-text with-color">Gris</span>
-                            <!-- </span> -->
-                        </label>
-                        <label for="" class="checkbox-container">
-                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
-                            <!-- <span class="checkbox"> -->
-                                <span class="ps-4 checkbox-text with-color">Negro</span>
-                            <!-- </span> -->
-                        </label>
-                    </div>
-
-                    <a href="#" class="d-inline-block btn btn-secondary btn-small">
-                        <span>Ver todos</span>
-                    </a>
-
-                    <!-- separator -->
-                    <div class="divider mt-3 pt-2"></div>
-                    
-                    <div>
-                        <div class="mb-3 mt-4 subtitle">
-                            Talle
-                        </div>
-                        <label for="" class="checkbox-container">
-                            <input class="checkbox-icon" type="checkbox" autocomplete="off">
-                            <!-- <span class="checkbox"> -->
-                                <span class="ps-4 checkbox-text with-color">4</span>
-                            <!-- </span> -->
-                        </label>
-                        <label for="" class="checkbox-container">
-                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                            <!-- <span class="checkbox"> -->
-                                <span class="ps-4 checkbox-text with-color">8.5</span>
-                            <!-- </span> -->
-                        </label>
-                        <label for="" class="checkbox-container">
-                            <input class="checkbox-icon" type="checkbox"  autocomplete="off">
-                            <!-- <span class="checkbox"> -->
-                                <span class="ps-4 checkbox-text with-color">9</span>
-                            <!-- </span> -->
-                        </label>
-                    </div>
-
-                    <a href="#" class="d-inline-block btn btn-secondary btn-small">
-                        <span>Ver todos</span>
-                    </a>
-
-                    <!-- separator -->
-                    <div class="divider mt-3 pt-2"></div>
-
-                    <div class="price-filter-container">
-                        <form action="">
-                            <div class="mb-3 mt-4 subtitle">Precio</div>
-                            <div class="form-group">
-                                <span class="filter-input-price-container">
-                                    <label for="" class="form-label">Desde</label>
-                                    <input type="number" name="min_price" step="1" min="0" pattern="\d*" 
-                                    class="form-control filter-input-price"
-                                    value placeholder="54.999">
-                                </span>      
-                                <span class="filter-input-price-container">
-                                    <label for="" class="form-label">Hasta</label>
-                                    <input type="number" name="min_price" step="1" min="0" pattern="\d*" 
-                                    class="form-control filter-input-price" 
-                                    value placeholder="245.799">
-                                </span>      
-                                <button type="submit" class="btn btn-secondary btn-small chevron btn-square"></button>
-                             
-                            </div>
-                            
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-            
-            <!-- end modal  -->
+  
   </div>
 
   
@@ -347,17 +218,15 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script>
-    var filters_sidebar = document.getElementById('filter-sidebar')
-    // $('.openBtn').on('click',function(){
-    //     filters_sidebar.setAttribute('class', 'myclass');
-    //     $('.modal-body').html(filters_sidebar);
-   
-    // });
-    function addCode() {
-        filters_sidebar.setAttribute('class', 'myclass');
-        var modal_b = document.getElementsByClassName('modal-body');
-        modal_b[0].appendChild(filters_sidebar);
-    }
+    // var filters_sidebar = document.getElementById('filter-sidebar')
+    var filters_sidebar = $('#filter-sidebar').clone();
+    
+    $('.openBtn').on('click',function(){
+        filters_sidebar.attr('class', 'col');
+        filters_sidebar.addClass('ms-3');
+        $('.modal-body').html(filters_sidebar);
+    });
+    
     </script>
 
 </html>

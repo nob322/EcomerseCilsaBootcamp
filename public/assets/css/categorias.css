@@ -195,8 +195,18 @@ h5, .h5 {
     .modal-body #filter-sidebar {
         display: block!important;
     }
-    /* #filters-dropdown {
+
+    #filters-dropdown, 
+    #filter-sidebar .btn-secondary {
         background: 0 0;
         text-transform: uppercase;    
-    } */
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .row {
+        padding: 3vw;
+    }
 }
