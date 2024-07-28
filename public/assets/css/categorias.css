@@ -82,6 +82,10 @@ h5, .h5 {
     opacity: 0.6;
 }
 
+.breadcrums .crumb.active {
+    opacity: 1;
+}
+
 .filter-input-price-container {
     position: relative;
     display: inline-block;
@@ -187,7 +191,7 @@ h5, .h5 {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 576px) {
     #filter-sidebar {
         display: none;
     }
