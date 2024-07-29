@@ -129,6 +129,7 @@ h5, .h5 {
     text-decoration: none;
 }
 
+
 .category-body .btn {
     background: 0 0;
     text-transform: uppercase;
@@ -142,6 +143,15 @@ h5, .h5 {
     left: 11px;
     width: 15px;
     height: 15px;
+}
+
+
+input {
+    font-family: var(--body-font);
+}
+
+p {
+    line-height: 20px;
 }
 
 /* form  */
