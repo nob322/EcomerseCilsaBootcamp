@@ -1,4 +1,7 @@
-# EcomerseCilsaBootcamp
+# Ecomerse de Cilsa en él Bootcamp Full Stack
+<div align="center">
+    <img src="public/assets/images/log/logo-cilsa.png" alt="Logo Cilsa" width="400">
+</div>
 Este Ecomerse fue parte de una actividad grupal del bootcamp full stack cursado durante 2024.
 
 Descripción del Trabajo Grupal en el Bootcamp de Cilsa
@@ -43,3 +46,12 @@ Desarrollo:
 Configuración del entorno de desarrollo y repositorio de código.
 Desarrollo del front-end utilizando tecnologías como HTML, CSS, JavaScript y frameworks como Bootstrap.
 Desarrollo del back-end utilizando tecnologías como Node.js, Express, y bases de datos como MongoDB o SQL.
+
+Tecnologías aplicadas al proyecto: 
+-Bootstrap v5.2.3
+-Html 5
+-Js
+-Css 3
+
+Contacto fundación Cilsa 
+-www.https://cilsa.org/
