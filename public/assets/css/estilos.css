@@ -12,8 +12,10 @@
     --body-font:  "Plus Jakarta Sans", sans-serif;
     --main-foreground-opacity-10: #0707071A;
     --main-foreground-opacity-30: #0707074D;
+    --main-foreground-opacity-80: #070707CC;
     --main-foreground: #070707;
     --main-background: #ffffff;
+    
   }
 
   body {

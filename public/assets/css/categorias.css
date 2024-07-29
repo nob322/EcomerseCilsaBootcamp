@@ -98,7 +98,7 @@ h5, .h5 {
     padding: 12px 22px 20px 10px;
 }
 
-
+/* buttons  */
 .btn-square {
     position: relative;
     width: 30px;
@@ -143,6 +143,8 @@ h5, .h5 {
     width: 15px;
     height: 15px;
 }
+
+/* form  */
 
 .form-group {
     margin-bottom: 20px;
