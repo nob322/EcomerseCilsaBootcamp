@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../public/assets/css/estilos.css">
+    <link rel="stylesheet" href="../../public/assets/css/categorias.css">
+    <link rel="stylesheet" href="../../public/assets/css/productos.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Staatliches&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Producto</title>
+</head>
+
+<body>
+<!-- navbar  -->
+    <ul class="nav justify-content-center mb-3">
+        <li class="nav-item">
+        <a class="nav-link " aria-current="page" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Categorias</a>
+        </li>
+    </ul>
+  <!-- end navbar  -->
+
+  <!-- product section  -->
+<div class="container-fluid">
+    <!-- <div class="row section-single-product"> -->
+        <!-- <div class="col "> -->
+        <!-- <div class="col-9"> -->
+            <div class="row ms-sm-3 me-sm-3 ">
+                <div class="col-2" id="pictures-sidebar">
+                    <!-- <a href="" class="product-thumb d-block position-relative mb-3 selected" style="padding-bottom: 100%;">
+                        <img src="../../public/assets/images/products/footwear/man/sneakers/zap_nike_blanca_costado.webp" class="img-absolute img-absolute-centered" alt="">
+                    </a> -->
+                    <a href="" class="imagen-sidebar d-block mb-3 selected" id="photo-1">
+                        <img src="../../public/assets/images/products/dress/man/sueter-gris-frontal.webp" alt="">
+                    </a>
+                    <a href="" class="imagen-sidebar d-block mb-3" id="photo-2">
+                        <img src="../../public/assets/images/products/dress/man/sueter-gris-espalda.webp" alt="">
+                    </a>
+                    <a href="" class="imagen-sidebar d-block mb-3" id="photo-3">
+                        <img src="../../public/assets/images/products/dress/man/sueter-gris-pecho.webp" alt="">
+                    </a>
+                </div>
+
+                <!-- carousel  -->
+                <div class="col-sm-6" id="full-picture">
+
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                       
+                        <div class="carousel-item active" id="fphoto-1">
+                            <img src="../../public/assets/images/products/dress/man/sueter-gris-frontal.webp"  class="d-block w-100" >
+                        </div>
+                        <div class="carousel-item" id="fphoto-2">
+                            <img src="../../public/assets/images/products/dress/man/sueter-gris-espalda.webp" class="d-block w-100" >
+                        </div>
+                        <div class="carousel-item" id="fphoto-3">
+                            <img src="../../public/assets/images/products/dress/man/sueter-gris-pecho.webp" class="d-block w-100"  >
+                        </div>   
+                    </div>
+                       
+                    </div>
+                </div> 
+                
+                  <!-- end carousel  -->
+
+                <!-- description sidebar  -->
+                <div class="col-sm-4">
+                    <section class="page-header pt-4">
+                        <!-- breadcrumbs  -->
+                        <div class="breadcrums mb-0 mb-md-2">
+                            <div>
+                                <a class="crumb" href="../index.html">Inicio</a>
+                                <span class="separator">.</span>
+                                <a class="crumb" href="../categorias/indumentaria.html">Indumentaria</a>
+                                <span class="separator">.</span>
+                                <span class="crumb active">Sueter Althon</span>
+                            </div>
+                        </div>
+
+                        <!-- page title  -->
+
+                        <div class="row mt-2" id="product-menu">
+                            <!-- <div class="col-8" id="product-name"> -->
+                            <div class="col" id="product-name">
+                                <h1 class="h4">Sueter Althon Nortern Gris</h1>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col pt-3 pb-3" id="product-price">
+                                    <span class="d-inline-block ">
+                                        $40.000
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- separator -->
+                            <div class="divider "></div>
+
+                            <!-- options sidebar  -->
+                            <form id="product-form">
+                                <div class="form-row pt-2 ps-2" id="select-caracteristicas">
+                                    <div class="col-12 mb-2">
+                                        <!-- color form input  -->
+                                        <!-- <div class="form-group"> -->
+                                        
+                                            <div class="row">
+                                                <div class="col-auto" id="color">
+                                                    <label for="variation-color-1" class="form-label mt-2">Color</label>
+                                                </div>
+                                                <div class="col pl-0">
+
+                                                    <select class="btn btn-variant btn-variant-content select-color" name="variation-color-1" id="variation-color-1">
+                                                        <option value="Gris">Gris</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        
+                                        <!-- end color form input  -->
+                                        
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <div class="row">
+                                            <div class="col-auto" id="marca">
+                                                <label for="variation-marca-1" class="form-label mt-2">Marca</label>
+                                            </div>
+                                            <div class="col pl-0">
+                                                <select class="btn btn-variant btn-variant-content select-color" name="variation-marca-1" id="variation-marca-1">
+                                                    <option value="Althon">Althon</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <div class="row">
+                                            <div class="col-auto" id="talle">
+                                                <label for="variation-talle-1" class="form-label mt-2">Talle</label>
+                                            </div>
+                                            <div class="col pl-0">
+
+                                                <select class="btn btn-variant btn-variant-content select-color" name="variation-talle-1" id="variation-talle-1">
+                                                    <option value="S">S</option>
+                                                    <option value="M">M</option>
+                                                    <option value="L">L</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-row mb-2 mt-4" id="quantity-container">
+                                    <div class="col-sm-4" id="quantity-controls">
+                                        <div class="col-auto d-none" id="cantidad">
+                                            <label class="form-label mt-2">Cantidad</label>
+                                        </div>
+                                        <div class="form-quantity form-group form-quantity-product">
+                                            <div class="form-row m-0 align-items-center">
+                                                <span id="minus-quant-sel" class="form-quantity-icon btn icon-inline icon-w-12 icon-lg"> - </span>
+                                                <div class="form-control-container col">
+                                                    <input type="number" class="form-control form-control-inline" id="quantity-sel" pattern="\d*" value="1" min="1">
+                                                </div>
+                                                <span class="form-quantity-icon btn  icon-inline icon-w-12 icon-lg" id="plus-quant-sel"> + </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8" id="submit-carrito">
+                                        <input type="submit" class="btn btn-primary btn-block mb-4 cart" value="Agregar al carrito">
+                                    </div>
+                                </div>
+                            
+                            </form>
+                            <div class="mb-2" id="pagos-container">
+                                <div class="col" id="medios-pago">
+                                    <i class="bi bi-credit-card-2-back" id="icon-pagos" style="font-size:large;"></i> 
+                                    <span class="subtitle ms-2">Medios de pago</span>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="row mb-4" id="pagos-text">
+                                        <div class="mb-2 col-12">
+                                            <span>7 cuotas sin interés de $5000</span>
+                                        </div>
+                                        <div class="mb-2 col-12">
+                                            <span>5% de descuento con transferencia bancaria</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="divider d-none" id="divisoria-descripcion"></div>
+
+                            <div id="product-description-text" class="mt-2">
+                                <div class="product-description user-content">
+                                    <div id="desc-titulo">DESCRIPCIÓN</div>
+                                    <div>&nbsp;</div>
+                                    <div>Escote redondo. Hilado acrílico. Puños elásticos.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    $('#minus-quant-sel').on('click', function(){
+        
+        let quant = $('#quantity-sel').get(0).value;
+        // $('#quantity-sel').get(0).value--;
+        if(quant <= 1) return;
+        else 
+            $('#quantity-sel').get(0).value--;
+    })
+    $('#plus-quant-sel').on('click', function(){
+        $('#quantity-sel').get(0).value++;
+       
+    })
+
+    // select carousel photo 
+
+    $(".imagen-sidebar").click(function(e) {
+        e.preventDefault();
+        $(".imagen-sidebar").removeClass("selected");
+        $(this).addClass("selected");
+
+        let id_photo_wanted = '#f' + $(this).attr('id');
+        $(".carousel-item").removeClass("active");
+        console.log(id_photo_wanted);
+        $(id_photo_wanted).addClass("active");
+    });
+</script>
+</html>
