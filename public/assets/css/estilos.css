@@ -8,6 +8,7 @@
     --color7:#181b16;
     --color8:#070707;
     --color9:#af9977;
+
     --heading-font: "Plus Jakarta Sans", sans-serif;
     --body-font:  "Plus Jakarta Sans", sans-serif;
     --main-foreground-opacity-10: #0707071A;
@@ -21,6 +22,7 @@
   body {
     font-family: var(--body-font);
     font-size: 12px;
+
   }
   /*generales a todas las clases*/
 *{
@@ -43,7 +45,6 @@ a:hover{
 }
 
 
-/* color: var(--color8); */
 /*text-color*/
 .text-color1 {
     color: var(--color1);
@@ -135,6 +136,20 @@ a:hover{
 }
 
 
+.custom-height {
+    height: 220px!important; /* ajusta este valor según tus necesidades */
+    
+}
+.font-size-Icons{
+    font-size: 90px;
+}
+
+.inputNewletter{
+    width: 100%!important;
+    height: 25px;
+    margin-bottom: 50px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
 
 
 
