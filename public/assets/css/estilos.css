@@ -8,6 +8,21 @@
     --color7:#181b16;
     --color8:#070707;
     --color9:#af9977;
+
+    --heading-font: "Plus Jakarta Sans", sans-serif;
+    --body-font:  "Plus Jakarta Sans", sans-serif;
+    --main-foreground-opacity-10: #0707071A;
+    --main-foreground-opacity-30: #0707074D;
+    --main-foreground-opacity-80: #070707CC;
+    --main-foreground: #070707;
+    --main-background: #ffffff;
+    
+  }
+
+  body {
+    font-family: var(--body-font);
+    font-size: 12px;
+
   }
   /*generales a todas las clases*/
 *{
@@ -28,7 +43,6 @@ a {
 a:hover{
     color: var(--bg-color8);
 }
-
 
 
 /*text-color*/
@@ -121,6 +135,7 @@ a:hover{
     font-size: 11px;
 }
 
+
 .custom-height {
     height: 220px!important; /* ajusta este valor según tus necesidades */
     
@@ -139,8 +154,5 @@ a:hover{
 
 
 /*footer*/
-     
-
-
 
 /*footer*/
