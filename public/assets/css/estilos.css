@@ -1,3 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/* navbar */
+
+.text-descuento{
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 12px; 
+    line-height: 20px;
+    padding: 4px 0;
+}
+#navbarNav{
+    font-size: larger;
+    border: 2px solid black;
+}
+.nav-link{
+    font-size: larger;
+    color: #070707;
+}
+.fixed-bottom-custom {
+    background-color: #f8f9fa; 
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-link{
+    font-size: x-large
+}
+#navbar {
+    background-color: white;
+}
+
+/* Estilos para el movimiento del navbar */
+.navbar-move {
+    transform: translateY(-30px);
+}
+.navbar {
+    transition: transform 0.3s ease-in-out;
+    z-index: 1030; 
+}
+.content {
+    margin-top: 156px; 
+} 
+/* Estilos para el movimiento del navbar */
+
+/* navbar */
+
+
+
+
+
+
 :root {
     --color1:#ecf0f1;
     --color2:#ffffff;

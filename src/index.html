@@ -12,20 +12,77 @@
     <!--estilos-->
 </head>
 <body>
-    <!--header-->
-    <header>
-       <!--nav-->
-       <nav></nav>
-       <!--nav-->
+        <!--header-->
+    <header class="fixed-top">
+        <section class="js-adbar section-adbar ">
+            <div class="">
+                <a>
+                    <div class="font-small text-center text-descuento"> 3 y 6 Cuotas SIN INTERÉS con MODO ⚡</div>
+                </a>
+            </div>
+        </section>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg d-flex align-items-center sticky-top" id="navbar">
+            <div class="container-fluid d-flex justify-content-between">
+
+                <ul class="navbar-nav d-none d-md-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/login/">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/login/">
+                            <i class="fa-solid fa-magnifying-glass custom-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+        
+                <a class="navbar-brand mx-auto d-flex justify-content-center" href="#">
+                    <img class="logo-black" src="../public/assets/images/log/logo-black.png" alt="Logo">
+                </a>
+        
+                <ul class="navbar-nav d-none d-md-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/login/">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/login/">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--nav-->
     </header>
     <!--header-->
 
-    <!--main-->
-    <main>
+    <!-- Script para el scroll -->
+    <script>
+        // Control de movimiento del navbar al hacer scroll
+        let lastScrollTop = 0;
+        const navbar = document.getElementById("navbar");
 
-    </main>
-    <!--main-->
+        window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
+        if (scrollTop > lastScrollTop) {
+        
+            navbar.classList.add("navbar-move");
+        } else if (scrollTop === 0) {
+           
+            navbar.classList.remove("navbar-move");
+        }
+
+        lastScrollTop = scrollTop;
+        });
+
+    </script> 
+    <!-- Script para el scroll -->
+    <!-- Contenedor principal del contenido -->
     <!--aside-->
     <aside>
         
@@ -210,6 +267,43 @@
     <script src="../public/assets/js/app.js"></script>
     <script src="../public/assets/frameworks/js/bootstrap.bundle.min.js"></script>
     <!--script-->
+
+
+
+
+    <!-- Menu Responsive -->
+    <nav class="navbar fixed-bottom navbar-light fixed-bottom-custom d-block d-md-none ">
+        <div class="container-fluid">
+            <div class="row w-100">
+                <div class="col text-center">
+                    <a class="nav-link" href="https://vonkstore.com" aria-label="Home">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="nav-link" href="#" aria-label="Search">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="nav-link" href="#" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="nav-link" href="#" aria-label="Cart">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="nav-link" href="#" aria-label="Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Menu Responsive -->
 </body>
 
 </html>
