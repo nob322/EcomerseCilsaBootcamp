@@ -50,7 +50,16 @@ html, body {
 .navbar {
     transition: transform 0.3s ease-in-out;
     z-index: 1030; 
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
+
+.main-index-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+}
+
 .content {
     margin-top: 156px; 
 } 
@@ -220,17 +229,45 @@ a:hover{
     display: block!important;
 }
 
+@media (max-width: 1080px) {
+    .navbar {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+
+}
+
+/* breakpoints  */
 @media (max-width: 780px) {
     .space-above-2 {
         margin-top: 120px!important;
     }
-
-    /* .space-above-1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } */
     
+    .navbar {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .main-index-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+    }
+    
+}
+
+@media (max-width: 540px) {
+    .navbar {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    .main-index-content {
+        padding-left: 1rem;
+        padding-right: 1rem;    
+    }
+
 }
 
 /*footer*/
