@@ -1,4 +1,8 @@
-
+.dark-hamburger {
+    background-color: black;
+    color: white;
+    padding: 6px 12px!important;
+}
 
 
 #pictures-sidebar img ,
@@ -213,7 +217,7 @@ input::-webkit-inner-spin-button {
     }
 
     #full-picture {
-        width: 60vw;
+        width: 50vw;
     }
 }
 

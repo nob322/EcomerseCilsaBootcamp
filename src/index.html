@@ -23,26 +23,26 @@
         </section>
         <!--nav-->
         <nav class="navbar navbar-expand-lg d-flex align-items-center sticky-top" id="navbar">
-            <div class="container-fluid d-flex justify-content-between">
+            <div class="container-fluid d-flex justify-content-between flex-nowrap flex-md-wrap">
 
-                <ul class="navbar-nav d-none d-md-flex align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/account/login/">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/account/login/">
-                            <i class="fa-solid fa-magnifying-glass custom-icon"></i>
-                        </a>
-                    </li>
-                </ul>
-        
+                <!-- dropdown  -->
+                <div class="dropdown ms-md-3">
+                    <button class="btn  text-bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ☰
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./categorias/calzado.html">Calzado</a></li>
+                     
+                      <li><a class="dropdown-item" href="./categorias/indumentaria.html">Indumentaria</a></li>
+                    </ul>
+                  </div>
+                <!-- end dropdown  -->
+
                 <a class="navbar-brand mx-auto d-flex justify-content-center" href="#">
                     <img class="logo-black" src="../public/assets/images/log/logo-black.png" alt="Logo">
                 </a>
         
-                <ul class="navbar-nav d-none d-md-flex align-items-center">
+                <ul class="navbar-nav d-none d-lg-flex align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="/account/login/">
                             <i class="fa-regular fa-user"></i>
@@ -84,29 +84,29 @@
     <!-- Script para el scroll -->
     <!-- Contenedor principal del contenido -->
     <!--aside-->
-    <aside>
-        
+    <aside >
     </aside>
     <!--aside-->
     <!--section data envio atención cuotas-->
 
-    <section class="container mt-5 mb-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center flex-column">
-               <span ><i class="fa-solid fa-truck font-size-Icons"></i></span>
+    <section class="container mb-5 space-above-2">
+        <!-- <div class="row d-flex justify-content-center d-none d-md-flex" > -->
+        <div class="row d-flex justify-content-lg-center justify-content-around d-none d-md-flex" >
+            <div class="col-12 col-sm-12 col-md-3  col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center flex-column">
+               <span ><i class="fa-solid d-none d-lg-flex fa-truck font-size-Icons"></i></span>
                <h5 class="text-center mt-5">ENVÍO GRATIS</h5>
                <p class="text-center">Para compras superiores a $89.999</p>
-               </div>
-               <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center flex-column">
-               <span><i class="fa-brands fa-whatsapp font-size-Icons"></i></span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center flex-column">
+               <span><i class="fa-brands fa-whatsapp d-none d-lg-flex font-size-Icons"></i></span>
                <h5 class="text-center mt-5">ATENCIÓN PERSONALIZADA</h5>
                <p class="text-center">Estamos para ayudarte ♥</p>
-               </div>
-               <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center flex-column ">
-               <span><i class="fa-regular fa-credit-card font-size-Icons"></i></span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-center align-items-center flex-column ">
+               <span><i class="fa-regular d-lg-flex d-none fa-credit-card font-size-Icons"></i></span>
                <h5 class="text-center mt-5">CUOTAS SIN INTERÉS</h5>
                <p class="text-center">con tarjetas de crédito bancarias</p>
-               </div>
+            </div>
         </div>
       
     </section>
