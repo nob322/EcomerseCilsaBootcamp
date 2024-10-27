@@ -55,7 +55,10 @@ h5, .h5 {
     border-bottom: 1px solid var(--main-foreground-opacity-10);
 }
 
-
+.dark-hamburger {
+    background-color: black;
+    color: white!important;
+}
 
 .col-auto {
     padding-right: 15px;

@@ -23,11 +23,101 @@
 
 <body>
 <!-- navbar  -->
-   
+      <!--header-->
+      <header class="fixed-top">
+        <section class="js-adbar section-adbar ">
+            <div class="">
+                <a>
+                    <div class="font-small text-center text-descuento"> 3 y 6 Cuotas SIN INTERÉS con MODO ⚡</div>
+                </a>
+            </div>
+        </section>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg d-flex align-items-center sticky-top" id="navbar">
+            <!-- <div class="container-fluid d-flex justify-content-md-between"> -->
+            <div class="container-fluid d-flex flex-nowrap justify-content-between">
+
+                <!-- dropdown  -->
+                <div class="dropdown ms-3 ">
+                    <button class="btn dark-hamburger " type="button" data-bs-toggle="dropdown" aria-expanded="false" 
+                    aria-expanded-aux="false"
+                    id="dropdownButton"
+                    >
+                        ☰
+                    </button>
+                    <ul class="dropdown-menu" id="dropdownMenu" >
+                      <li><a class="dropdown-item" href="../categorias/calzado.html">Calzado</a></li>
+                     
+                      <li><a class="dropdown-item" href="../categorias/indumentaria.html">Indumentaria</a></li>
+                    </ul>
+                  </div>
+                <!-- end dropdown  -->
+
+                <a class="navbar-brand mx-auto d-flex justify-content-center" href="../index.html">
+                    <img class="logo-black" src="../../public/assets/images/log/logo-black.png" alt="Logo">
+                </a>
+        
+                <ul class="navbar-nav d-none d-lg-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/login/">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/login/">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--nav-->
+    </header>
+    <!--header-->
+
+    <!-- Script para el scroll -->
+    <script>
+        // Control de movimiento del navbar al hacer scroll
+        let lastScrollTop = 0;
+        const navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+        
+            navbar.classList.add("navbar-move");
+        } else if (scrollTop === 0) {
+           
+            navbar.classList.remove("navbar-move");
+        }
+
+        lastScrollTop = scrollTop;
+        });
+
+        const btnDropdown = document.getElementById("dropdownButton")
+        const menuDropdown = document.getElementById("dropdownMenu")
+        
+        btnDropdown.addEventListener('click', e => {
+            if(btnDropdown.getAttribute('aria-expanded-aux') == "false") {
+                
+                btnDropdown.classList.add("display-dropdown")
+                menuDropdown.classList.add("display-dropdown")
+                btnDropdown.setAttribute('aria-expanded-aux', "true")
+            
+            } else {
+                btnDropdown.classList.remove("display-dropdown")
+                menuDropdown.classList.remove("display-dropdown")
+                btnDropdown.setAttribute('aria-expanded-aux', "false")
+                
+            }
+        })
+    </script> 
   <!-- end navbar  -->
 
+
   <!-- product section  -->
-<div class="container-fluid mb-5"> <!---------->
+<div class="container mb-5 space-above-1">
 
     <div class="row ms-sm-3 me-sm-3 ">
         <div class="col-2" id="pictures-sidebar">
